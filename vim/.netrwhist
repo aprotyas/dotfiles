@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/aprotyas/work/coursework/spring-2020/amr-2020/build/catkin_generated'
+let g:netrw_dirhist_2='/home/aprotyas/work/coursework/spring-2020/amr-2020/build/catkin'
+let g:netrw_dirhist_3='/home/aprotyas/work/coursework/spring-2020/amr-2020/build'
+let g:netrw_dirhist_4='/home/aprotyas/work/coursework/spring-2020/amr-2020/build/catkin'
+let g:netrw_dirhist_5='/home/aprotyas/work/coursework/spring-2020/amr-2020/apriltags'
+let g:netrw_dirhist_6='/home/aprotyas/work/coursework/spring-2020/amr-2020/src/pfc/src/pfc'
+let g:netrw_dirhist_7='/home/aprotyas/work/coursework/spring-2020/amr-2020/src/workshop_assessment_one'
