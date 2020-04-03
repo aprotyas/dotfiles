@@ -15,6 +15,9 @@ sudo snap install vlc
 # Git
 sudo apt-get install git
 
+# tmux
+sudo apt install tmux
+
 # Firefox
 sudo apt install firefox
 
