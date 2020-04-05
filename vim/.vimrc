@@ -1,3 +1,5 @@
+ set shell=sh
+
 " syntax highlighting and filetype specific features
  syntax on
  filetype on
@@ -112,6 +114,7 @@
 
  call plug#begin('~/.vim/plugged')
  Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
+ Plug 'Xuyuanp/nerdtree-git-plugin'
  Plug 'preservim/nerdtree'
  call plug#end()
 
