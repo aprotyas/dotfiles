@@ -19,8 +19,8 @@ export PATH
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
-# For MPLAB XC32 Compiler
-export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
+# For MPLAB XC32 Compiler, uncomment if needed
+#export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
 
 # Aliases
 # Establising custom commands
