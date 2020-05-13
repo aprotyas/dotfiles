@@ -6,7 +6,6 @@ alias ssh_ros='ssh -Y aprotyas@ros.circ.rochester.edu'
 alias ssh_csb='ssh -Y aprotyas@mnemosyne.ece.rochester.edu'
 alias ssh_csc='ssh -Y aprotyas@cycle1.csug.rochester.edu'
 
-
 #~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -128,9 +127,13 @@ fi
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
+
+# ROS Stuff
 source /opt/ros/kinetic/setup.bash
 export ROS_NAMESPACE=${USER}
 
-alias cdd='cd /home/aprotyas/work/coursework/spring-2020/amr-2020/'
+# Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+export PS1="\A \u@\h:\W\[$(tput sgr0)\]"
 
-source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
+# ECE232 specific
+#source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash

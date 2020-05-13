@@ -2,20 +2,29 @@
 
 " syntax highlighting and filetype specific features
  syntax on
- filetype on
- filetype plugin on
- filetype indent on
+ set nocompatible   " be iMproved, required for Vundle
+ filetype off       " required for Vundle
+
+ " VUNDLE plugin stuff
+ " set the runtime path to include Vundle and initialize
+ set rtp+=~/.vim/bundle/Vundle.vim
+ call vundle#begin()
+ Plugin 'VundleVim/Vundle.vim'
+ Plugin 'preservim/nerdtree'
+ Plugin 'Xuyuanp/nerdtree-git-plugin''
+ call vundle#end()
+ filetype plugin indent on
 
  " Always display status bar
  set laststatus=2
 
  set background=dark
- let g:colors_name = 'jellybeans'
- colorscheme jellybeans
+ let g:colors_name = 'desert'
+ colorscheme desert
 
- " tabs are two spaces, smart tabbing
- set tabstop=2
- set shiftwidth=2
+ " tabs are four spaces, smart tabbing
+ set tabstop=4
+ set shiftwidth=4
  set expandtab
  set smarttab
 
@@ -50,7 +59,6 @@
  set magic 
 
  set cursorline
- filetype indent on
 
  "set wildmenu" enables a menu at the bottom of the vim/gvim window.
  "The meaning of "list:longest,full" is so that when you do completion in the
@@ -93,30 +101,14 @@
 
  " swp files... disgusting
   set nobackup
-   set noswapfile
+  set noswapfile
 
  " backspace :-)
-   set backspace=indent,eol,start
+  set backspace=indent,eol,start
 
  " roslaunch and hspice file setup
    autocmd BufRead,BufNewFile *.launch setfiletype roslaunch
    autocmd BufRead,BufNewFile *.hsp setfiletype spice
-
- " vim-plug stuff
-   if empty(glob('~/.vim/autoload/plug.vim'))
-             silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-                           \
-                           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-                                       autocmd VimEnter * PlugInstall --sync
-                                       | source $MYVIMRC
-                                           endif
-
-
- call plug#begin('~/.vim/plugged')
- Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.7' }
- Plug 'Xuyuanp/nerdtree-git-plugin'
- Plug 'preservim/nerdtree'
- call plug#end()
 
  " NERDTree will show hidden files
  let NERDTreeShowHidden=1
