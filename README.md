@@ -2,7 +2,7 @@
 Personal system config files (vim, bash, initial setup, etc.) :smiley:
 
 ## Instructions  
-a
+*  Go through setup.sh. Uncomment packages() liberally.
 
 ### Note to self
 *  For vim-plug, do not forget to use the command `:PlugInstall` on first run.  

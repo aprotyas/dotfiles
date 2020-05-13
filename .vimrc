@@ -11,7 +11,9 @@
  call vundle#begin()
  Plugin 'VundleVim/Vundle.vim'
  Plugin 'preservim/nerdtree'
- Plugin 'Xuyuanp/nerdtree-git-plugin''
+ Plugin 'Xuyuanp/nerdtree-git-plugin'
+ Plugin 'drewtempelmeyer/palenight.vim'
+ Plugin 'morhetz/gruvbox'
  call vundle#end()
  filetype plugin indent on
 
@@ -19,8 +21,14 @@
  set laststatus=2
 
  set background=dark
- let g:colors_name = 'desert'
- colorscheme desert
+ autocmd vimenter * colorscheme gruvbox
+ let g:gruvbox_contrast_dark='hard'
+ "colorscheme palenight 
+
+ " Enabling true colors
+ if (has("termguicolors"))
+     set termguicolors
+ endif
 
  " tabs are four spaces, smart tabbing
  set tabstop=4
