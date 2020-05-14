@@ -13,9 +13,11 @@ things not needed now.
 *  Remember to create an [ssh key](https://docs.gitlab.com/ee/ssh/ "SSH Key").  
 
 ## Tidbits & Flotsam  
-*  [Markdown cheatsheet](https://github.com/adam-p/markdown-here/
-        wiki/Markdown-Cheatsheet "Markdown cheatsheet")  
-*  [Vim: map vs noremap?](https://learnvimscriptthehardway.stevelosh.com/
-        chapters/05.html "map vs noremap")  
+*  [Markdown cheatsheet](
+        https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+        "Markdown cheatsheet")  
+*  [Vim: map vs noremap?](
+        https://learnvimscriptthehardway.stevelosh.com/chapters/05.html
+        "map vs noremap")  
 *  [Shell prompts!](http://www.nparikh.org/unix/prompt.php#zsh "Customizing
         shell prompts")
