@@ -1,14 +1,15 @@
 # dotfiles
-Personal system config files (vim, bash, initial setup, etc.) :smiley:
+Personal system config files (vim, bash/zsh, etc.) :smiley:
 
 ## Instructions  
-*  Go through setup.sh. Uncomment packages() liberally.
+*  `git clone https://github.com/aprotyas/dotfiles.git $HOME/dotfiles`  
+*  `sh setup.sh`
 
-### Note to self
-*  For vim-plug, do not forget to use the command `:PlugInstall` on first run.  
+## Note to self
+*  For Vundle, run `vim +PluginInstall +qall` to install the plugins listed in vimrc.  
 *  setup-new.sh contains all the packages that may be desirable, comment out 
    the things not needed now.  
-*  Remember to create ssh key.  
+*  Remember to create an [ssh key](https://docs.gitlab.com/ee/ssh/ "SSH Key").  
 
 ## Tidbits & Flotsam  
 *  [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown cheatsheet")  
