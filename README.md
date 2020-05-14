@@ -7,8 +7,7 @@ Personal system config files (vim, bash/zsh, etc.) :smiley:
 
 ## Note to self
 *  For Vundle, run `vim +PluginInstall +qall` to install the plugins listed in vimrc.  
-*  setup-new.sh contains all the packages that may be desirable, comment out 
-   the things not needed now.  
+*  setup.sh contains all the packages that may be desirable, comment out the things not needed now.  
 *  Remember to create an [ssh key](https://docs.gitlab.com/ee/ssh/ "SSH Key").  
 
 ## Tidbits & Flotsam  
