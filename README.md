@@ -3,7 +3,8 @@ Personal system config files (vim, bash/zsh, etc.) :smiley:
 
 ## Instructions  
 *  `git clone https://github.com/aprotyas/dotfiles.git $HOME/dotfiles`  
-*  `sh setup.sh`
+*  `sh setup.sh`  
+*  `source <shell>rc`, \<shell\>=bash/csh/zsh
 
 ## Note to self
 *  For Vundle, run `vim +PluginInstall +qall` to install the plugins listed in
