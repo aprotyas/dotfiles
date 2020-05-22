@@ -10,7 +10,7 @@ set   white="%{\e[0;37m%}"
 set     end="%{\e[0m%}"     # Terminating
 
 
-PROMPT="${white}[%F{130}%T ${green}%n ${white}%1d%f ]%#${end} "
+PROMPT="${white}[%F{130}%T ${green}%n:${white}%1d%f ]%#${end} "
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'

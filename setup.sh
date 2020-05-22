@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/sh
 # Adapted from Soma Mizobuchi (smizobuc)'s setup.sh script
 PROMPT="[SETUP]"
 
