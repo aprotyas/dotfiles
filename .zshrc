@@ -39,7 +39,10 @@ export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
 alias ssh_ros='ssh -Y aprotyas@ros.circ.rochester.edu'
 alias ssh_csb='ssh -Y aprotyas@mnemosyne.ece.rochester.edu'
 alias ssh_csc='ssh -Y aprotyas@cycle1.csug.rochester.edu'
-alias cdd='cd ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/Year\ 3/6.\ 2020\ Spring/'
-alias mars='open ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/Year\ 3/6.\ 2020\ Spring/ECE200/Mars4_5.jar'
+alias cdd='cd ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/'
+alias iterm='open /Applications/iTerm.app'
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
