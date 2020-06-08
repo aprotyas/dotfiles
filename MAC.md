@@ -25,6 +25,7 @@ instance of `cask <xxx>` will be replaced with `brew install cask <xxx>`.
 #### iTerm2  
 iTerm2 should be installed by the bundle command from before. Set Hack Nerd Font
 as the default font.  
+[iTerm2 cheat sheet](https://gist.github.com/wilsonmar/d2d00c3d54ffc36a05e29d2a695f5b3a)  
 
 #### SSH Key  
 Security:
