@@ -52,3 +52,5 @@ To display original state in a conflict: `git config --global merge.conflictsyle
 Furthermore, remember to create a pair of GPG keys and put it on Github.
 [Here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
  is how.  
+Remember to modify the global gitconfig with the appropriate user.signingkey,
+gpg.program, and commit.gpgsign.  
