@@ -47,3 +47,8 @@ Host *
 
 #### Git  
 Set `git config --global user.name` and `git config --global user.email`.  
+To ensure git output is colored: `git config --global color.ui auto`  
+To display original state in a conflict: `git config --global merge.conflictsyle diff3`  
+Furthermore, remember to create a pair of GPG keys and put it on Github.
+[Here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)
+ is how.  
