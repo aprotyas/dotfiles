@@ -12,10 +12,11 @@
     {
         "link": {
             "~/.bashrc":"bashrc",
-	    "~/.vimrc": "vimrc",
-	    "~/.vim": "vim/",
-	    "~/.zshrc": "zshrc",
-	    "~/.cshrc": "cshrc"
+	        "~/.vimrc": "vimrc",
+	        "~/.vim": "vim/",
+	        "~/.zshrc": "zshrc",
+	        "~/.cshrc": "cshrc",
+            "~/.dotfiles": ""
         }
     },
     {
