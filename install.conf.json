@@ -16,6 +16,7 @@
 	        "~/.vim": "vim/",
 	        "~/.zshrc": "zshrc",
 	        "~/.cshrc": "cshrc",
+            "~/.gitignore_global": "gitignore_global",
             "~/.dotfiles": ""
         }
     },
