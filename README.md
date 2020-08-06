@@ -13,6 +13,27 @@ vimrc.
 things not needed now.  
 *  Remember to create an [ssh key](https://docs.gitlab.com/ee/ssh/ "SSH Key").  
 
+## Git submodules  
+Some vim modules and the dotbot utility is part of this git repo as Git
+submodules. To initialize submodules and checkout the specified version, use the
+command: `git submodule update --init --recursive`  
+Upgrading submodules to the latest published version can be done by running the
+command: `git submodule update --init --remote`  
+When using submodules like this, it is handy to have submodule initialization
+as part of the installation script of dotbot. This can be done by adding the
+following shell command to Dotbot's YAML config file:  
+
+```yaml
+[
+    {
+        "shell": [
+            ["git submodule update --init --recursive",
+                "Installing submodules"]
+        ]
+    }
+]
+```
+
 ## Tidbits & Flotsam  
 *  [Markdown cheatsheet](
         https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet

@@ -1,0 +1,19 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+
+[submodule "vim/plugged/jellybeans.vim"]
+    path = vim/plugged/jellybeans.vim
+    url = https://github.com/nanotech/jellybeans.vim
+
+[submodule "vim/plugged/nerdtree"]
+    path = vim/plugged/nerdtree
+    url = https://github.com/preservim/nerdtree
+[submodule "vim/bundle/Vundle.vim"]
+	path = vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
+    ignore = dirty
+[submodule "vim/bundle/gruvbox"]
+	path = vim/bundle/gruvbox
+	url = https://www.github.com/morhetz/gruvbox

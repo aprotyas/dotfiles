@@ -1,0 +1,26 @@
+[
+    {
+        "clean": [
+            "~"
+        ]
+    },
+    {
+        "shell": [
+            ["mkdir -p ~/bin/ ~/.ssh/ ~/.config/sbackup/ ", "Creating dirs."]
+        ]
+    },
+    {
+        "link": {
+            "~/.bashrc":"bashrc",
+	    "~/.vimrc": "vimrc",
+	    "~/.vim": "vim/",
+	    "~/.zshrc": "zshrc",
+	    "~/.cshrc": "cshrc"
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing/updating submodules"]
+        ]
+    }
+]
