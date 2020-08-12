@@ -32,6 +32,3 @@
     path = vim/bundle/palenight.vim
     url = https://github.com/drewtempelmeyer/palenight.vim.git
 
-[submodule "vim/bundle/vim-latex-live-preview"]
-	path = vim/bundle/vim-latex-live-preview
-	url = https://github.com/xuhdev/vim-latex-live-preview.git
