@@ -14,8 +14,13 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
+ " To run, execute `:LLPStartPreview`
+ Plugin 'xuhdev/vim-latex-live-preview'
  call vundle#end()
  filetype plugin indent on
+
+ " Latex live preview PDF application
+ let g:livepreview_previewer = 'open -a Preview'
 
  " Always display status bar
  set laststatus=2
