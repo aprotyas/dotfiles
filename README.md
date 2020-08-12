@@ -3,14 +3,11 @@ Personal system config files (vim, bash/zsh, etc.) :smiley:
 
 ## Instructions  
 *  `git clone https://github.com/aprotyas/dotfiles.git $HOME/dotfiles`  
-*  `sh setup.sh`  
-*  `source <shell>rc`, \<shell\>=bash/csh/zsh
+*  `./install`  
 
 ## Note to self
 *  For Vundle, run `vim +PluginInstall +qall` to install the plugins listed in
 vimrc.  
-*  setup.sh contains all the packages that may be desirable, comment out the
-things not needed now.  
 *  Remember to create an [ssh key](https://docs.gitlab.com/ee/ssh/ "SSH Key").  
 
 ## Git submodules  
