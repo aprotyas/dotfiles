@@ -14,13 +14,8 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
- " To run, execute `:LLPStartPreview`
- Plugin 'xuhdev/vim-latex-live-preview'
  call vundle#end()
  filetype plugin indent on
-
- " Latex live preview PDF application
- let g:livepreview_previewer = 'open -a Preview'
 
  " Always display status bar
  set laststatus=2
@@ -132,3 +127,7 @@
  " NERDTree will automatically open when vim starts up on a directory
  autocmd StdinReadPre * let s:std_in=1
  autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+ 
+ " Mappings for compiling LaTeX files
+ autocmd FileType tex nmap <buffer> <leader>t :!pdflatex %<CR>
+ autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
