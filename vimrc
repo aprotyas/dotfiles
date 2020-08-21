@@ -14,6 +14,7 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
+ Plugin 'rust-lang/rust.vim'
  call vundle#end()
  filetype plugin indent on
 
