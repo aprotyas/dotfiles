@@ -41,6 +41,11 @@ alias ssh_csb='ssh -Y aprotyas@mnemosyne.ece.rochester.edu'
 alias ssh_csc='ssh -Y aprotyas@cycle1.csug.rochester.edu'
 alias cdd='cd ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/'
 alias iterm='open /Applications/iTerm.app'
+alias gpp98='g++ *.cpp -Wall -std=c++98 -o out'
+alias gpp11='g++ *.cpp -Wall -std=c++11 -o out'
+alias gpp14='g++ *.cpp -Wall -std=c++14 -o out'
+alias gpp17='g++ *.cpp -Wall -std=c++17 -o out'
+alias gpp20='g++ *.cpp -Wall -std=c++2a -o out'
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
