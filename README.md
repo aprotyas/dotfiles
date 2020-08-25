@@ -40,3 +40,7 @@ following shell command to Dotbot's YAML config file:
         "map vs noremap")  
 *  [Shell prompts!](http://www.nparikh.org/unix/prompt.php#zsh "Customizing
         shell prompts")
+*  [Vim cheatsheet](
+        https://vim.rtorr.com/
+        "Vim cheatsheet")  
+
