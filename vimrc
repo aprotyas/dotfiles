@@ -22,9 +22,12 @@
  set laststatus=2
 
  set background=dark
- autocmd vimenter * colorscheme gruvbox
- let g:gruvbox_contrast_dark='hard'
- "colorscheme palenight 
+ "autocmd vimenter * colorscheme gruvbox
+ "let g:gruvbox_contrast_dark='hard'
+ colorscheme palenight 
+ if (has("termguicolors"))
+  set termguicolors
+endif
 
  " Enabling true colors
  if (has("termguicolors"))
@@ -43,7 +46,7 @@
 
  " column 80 v-line
  set colorcolumn=80
- highlight colorcolumn guibg=red
+ highlight colorcolumn guibg=darkgreen
  highlight colorcolumn ctermbg=2
 
  " Show matching brackets
