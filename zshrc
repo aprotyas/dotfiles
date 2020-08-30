@@ -48,6 +48,7 @@ alias gpp14='g++ -Wall -std=c++14 -o out'
 alias gpp17='g++ -Wall -std=c++17 -o out'
 alias gpp20='g++ -Wall -std=c++2a -o out'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+alias matlab='/Applications/MATLAB_R2019b.app/bin/matlab'
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
