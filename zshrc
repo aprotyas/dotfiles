@@ -49,8 +49,10 @@ alias gpp17='g++ -Wall -std=c++17 -o out'
 alias gpp20='g++ -Wall -std=c++2a -o out'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias matlab='/Applications/MATLAB_R2019b.app/bin/matlab'
+alias ltx='cp ~/template.tex .'
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
