@@ -133,7 +133,7 @@ export PATH="$HOME/gems/bin:$PATH"
 #export ROS_NAMESPACE=${USER}
 
 # Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
-export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$  "
+export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$ "
 
 # ECE232 specific
 #source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
