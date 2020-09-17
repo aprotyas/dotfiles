@@ -129,8 +129,8 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
 # ROS Stuff
-source /opt/ros/kinetic/setup.bash
-export ROS_NAMESPACE=${USER}
+#source /opt/ros/kinetic/setup.bash
+#export ROS_NAMESPACE=${USER}
 
 # Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
 export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$  "
