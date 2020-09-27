@@ -65,10 +65,10 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$'
 else
     #PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-    PS1='${debian_chroot:+($debian_chroot)}\u:\W\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u:\W\$'
 fi
 unset color_prompt force_color_prompt
 
@@ -129,11 +129,11 @@ export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
 
 # ROS Stuff
-source /opt/ros/kinetic/setup.bash
-export ROS_NAMESPACE=${USER}
+#source /opt/ros/kinetic/setup.bash
+#export ROS_NAMESPACE=${USER}
 
 # Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
-export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$  "
+export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$ "
 
 # ECE232 specific
 #source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
