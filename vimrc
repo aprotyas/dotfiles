@@ -45,9 +45,9 @@ endif
  set smartindent
 
  " column 80 v-line
- set colorcolumn=80
- highlight colorcolumn guibg=darkgreen
- highlight colorcolumn ctermbg=2
+ " set colorcolumn=80
+ " highlight colorcolumn guibg=darkgreen
+ " highlight colorcolumn ctermbg=2
 
  " Show matching brackets
  set showmatch
