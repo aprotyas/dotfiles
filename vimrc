@@ -137,3 +137,10 @@ endif
  " Mappings for compiling LaTeX files
  autocmd FileType tex nmap <buffer> <leader>t :!pdflatex %<CR>
  autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
+
+ " airline customization
+ " smarter tab line
+ let g:airline#extensions#tabline#enabled = 1
+
+ " just show the filename
+ let g:airline#extensions#tabline#fnamemod = ':t'
