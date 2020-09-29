@@ -54,3 +54,8 @@ __pycache__/
 *.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
+
+## ipynb_checkpoints:
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+**/*.ipynb_checkpoints/
