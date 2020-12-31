@@ -137,3 +137,5 @@ export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$ "
 
 # ECE232 specific
 #source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
+source "$HOME/.cargo/env"

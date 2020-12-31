@@ -15,27 +15,23 @@
  Plugin 'VundleVim/Vundle.vim'
  Plugin 'preservim/nerdtree'
  Plugin 'Xuyuanp/nerdtree-git-plugin'
- Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
+ Plugin 'octol/vim-cpp-enhanced-highlight'
+ Plugin 'arzg/vim-rust-syntax-ext'
+ Plugin 'arzg/vim-colors-xcode'
+ Plugin 'tpope/vim-git'
  call vundle#end()
  filetype plugin indent on
 
  " Always display status bar
  set laststatus=2
 
- set background=dark
- "autocmd vimenter * colorscheme gruvbox
- "let g:gruvbox_contrast_dark='hard'
- colorscheme palenight 
  if (has("termguicolors"))
   set termguicolors
 endif
-
- " Enabling true colors
- if (has("termguicolors"))
-     set termguicolors
- endif
+ colorscheme xcodedark
+ let g:airline_theme='xcodedark'
 
  " tabs are four spaces, smart tabbing
  set tabstop=4
