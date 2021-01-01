@@ -130,6 +130,8 @@ export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
 # Aliases
 # Establising custom commands
 
+alias ls='exa --git'
+alias tree='exa --tree --git --long'
 alias ssh_ros='ssh -Y aprotyas@ros.circ.rochester.edu'
 alias ssh_csb='ssh -Y aprotyas@mnemosyne.ece.rochester.edu'
 alias ssh_csc='ssh -Y aprotyas@cycle1.csug.rochester.edu'

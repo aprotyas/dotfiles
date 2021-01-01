@@ -44,7 +44,7 @@ endif
  set smartindent
 
  " column 80 v-line
- " set colorcolumn=80
+ set colorcolumn=80
  " highlight colorcolumn guibg=darkgreen
  " highlight colorcolumn ctermbg=2
 
@@ -141,3 +141,6 @@ endif
 
  " just show the filename
  let g:airline#extensions#tabline#fnamemod = ':t'
+
+ " rustfmt formats .rs on autosave
+ let g:rustfmt_autosave = 1
