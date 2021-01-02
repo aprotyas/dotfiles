@@ -15,26 +15,24 @@
  Plugin 'VundleVim/Vundle.vim'
  Plugin 'preservim/nerdtree'
  Plugin 'Xuyuanp/nerdtree-git-plugin'
- Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
  Plugin 'Valloric/YouCompleteMe'
  Plugin 'Yggdroot/indentLine'
+ Plugin 'octol/vim-cpp-enhanced-highlight'
+ Plugin 'arzg/vim-rust-syntax-ext'
+ Plugin 'arzg/vim-colors-xcode'
+ Plugin 'tpope/vim-git'
  call vundle#end()
  filetype plugin indent on
 
  " Always display status bar
  set laststatus=2
-
- set background=dark
- autocmd vimenter * colorscheme gruvbox
- let g:gruvbox_contrast_dark='hard'
- "colorscheme desert
-
- " Enabling true colors
  if (has("termguicolors"))
-     set termguicolors
- endif
+  set termguicolors
+endif
+ colorscheme xcodedark
+ let g:airline_theme='xcodedark'
 
  " tabs are four spaces, smart tabbing
  set tabstop=4
@@ -47,7 +45,7 @@
  set smartindent
 
  " column 80 v-line
- " set colorcolumn=80
+ set colorcolumn=80
  " highlight colorcolumn guibg=darkgreen
  " highlight colorcolumn ctermbg=2
 
@@ -148,3 +146,6 @@
  " let g:indentLine_leadingSpaceEnabled = 1
  " let g:indentLine_leadingSpaceChar = '·'
  " let g:indentLine_char = ''
+
+ " rustfmt formats .rs on autosave
+ let g:rustfmt_autosave = 1
