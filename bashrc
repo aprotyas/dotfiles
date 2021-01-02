@@ -130,6 +130,10 @@ export PATH="$HOME/gems/bin:$PATH"
 
 # ROS Stuff
 #source /opt/ros/kinetic/setup.bash
+#source /opt/ros/melodic/setup.bash
+#source /opt/ros/noetic/setup.bash
+#source ~/ros2_foxy/install/local_setup.bash
+export ROS_NAMESPACE=${USER}
 #export ROS_NAMESPACE=${USER}
 
 # Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
@@ -137,3 +141,12 @@ export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$ "
 
 # ECE232 specific
 #source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
+#source /home/aprotyas/.cargo/env
+#source /usr/share/colcon_cd/function/colcon_cd.sh
+#source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+#export _colcon_cd_root=~/ros2_foxy
+
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
+source <(kitty + complete setup bash)

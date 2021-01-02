@@ -18,6 +18,8 @@
  Plugin 'drewtempelmeyer/palenight.vim'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
+ Plugin 'Valloric/YouCompleteMe'
+ Plugin 'Yggdroot/indentLine'
  call vundle#end()
  filetype plugin indent on
 
@@ -25,12 +27,9 @@
  set laststatus=2
 
  set background=dark
- "autocmd vimenter * colorscheme gruvbox
- "let g:gruvbox_contrast_dark='hard'
- colorscheme palenight 
- if (has("termguicolors"))
-  set termguicolors
-endif
+ autocmd vimenter * colorscheme gruvbox
+ let g:gruvbox_contrast_dark='hard'
+ "colorscheme desert
 
  " Enabling true colors
  if (has("termguicolors"))
@@ -145,3 +144,7 @@ endif
 
  " just show the filename
  let g:airline#extensions#tabline#fnamemod = ':t'
+
+ " let g:indentLine_leadingSpaceEnabled = 1
+ " let g:indentLine_leadingSpaceChar = '·'
+ " let g:indentLine_char = ''
