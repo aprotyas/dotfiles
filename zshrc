@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aprotyas/.oh-my-zsh"
+export ZSH="/home/aprotyas/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -72,10 +72,10 @@ ZSH_THEME="robbyrussell"
 plugins=(
     git
     colored-man-pages
-    osx
     colorize
 )
 
+#source ~/.oh-my-zsh/oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -119,13 +119,13 @@ export PATH
 PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 export PATH
 
-PATH="${HOME}/pdfsizeopt:${PATH}"
-export PATH
+#PATH="${HOME}/pdfsizeopt:${PATH}"
+#export PATH
 
-PATH="${HOME}/sam2p:${PATH}"
-export PATH
+#PATH="${HOME}/sam2p:${PATH}"
+#export PATH
 
-export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
+#export PATH="$PATH:"/Applications/microchip/xc32/v2.15/bin""
 
 # Aliases
 # Establising custom commands
@@ -135,23 +135,23 @@ alias tree='exa --tree --git --long'
 alias ssh_ros='ssh -Y aprotyas@ros.circ.rochester.edu'
 alias ssh_csb='ssh -Y aprotyas@mnemosyne.ece.rochester.edu'
 alias ssh_csc='ssh -Y aprotyas@cycle1.csug.rochester.edu'
-alias cdd='cd ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/'
-alias iterm='open /Applications/iTerm.app'
+#alias cdd='cd ~/Documents/Work/University\ of\ Rochester\ -\ Undergrad/'
+#alias iterm='open /Applications/iTerm.app'
 # Press C-x + a to expand aliases, then type in source file name
 alias gpp98='g++ -Wall -std=c++98 -o out'
 alias gpp11='g++ -Wall -std=c++11 -o out'
 alias gpp14='g++ -Wall -std=c++14 -o out'
 alias gpp17='g++ -Wall -std=c++17 -o out'
 alias gpp20='g++ -Wall -std=c++2a -o out'
-alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
-alias matlab='/Applications/MATLAB_R2019b.app/bin/matlab'
-alias ltx='cp ~/template.tex .'
-autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+#alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+#alias matlab='/Applications/MATLAB_R2019b.app/bin/matlab'
+#alias ltx='cp ~/template.tex .'
+#autoload -Uz compinit && compinit
+#zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
+#export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 
