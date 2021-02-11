@@ -19,6 +19,8 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
+ Plugin 'Valloric/YouCompleteMe'
+ Plugin 'Yggdroot/indentLine'
  Plugin 'octol/vim-cpp-enhanced-highlight'
  Plugin 'arzg/vim-rust-syntax-ext'
  Plugin 'arzg/vim-colors-xcode'
@@ -28,7 +30,6 @@
 
  " Always display status bar
  set laststatus=2
-
  if (has("termguicolors"))
   set termguicolors
 endif
@@ -143,6 +144,10 @@ endif
 
  " just show the filename
  let g:airline#extensions#tabline#fnamemod = ':t'
+
+ " let g:indentLine_leadingSpaceEnabled = 1
+ " let g:indentLine_leadingSpaceChar = '·'
+ " let g:indentLine_char = ''
 
  " rustfmt formats .rs on autosave
  let g:rustfmt_autosave = 1
