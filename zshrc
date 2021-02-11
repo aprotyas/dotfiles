@@ -106,17 +106,20 @@ source $ZSH/oh-my-zsh.sh
 
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
 export PATH
 
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+#PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+export PATH
+
+#PATH="/Library/Frameworks/Python.framework/Versions/3.8/bin:${PATH}"
 export PATH
 
 PATH="${HOME}/pdfsizeopt:${PATH}"
@@ -145,15 +148,25 @@ alias gpp17='g++ -Wall -std=c++17 -o out'
 alias gpp20='g++ -Wall -std=c++2a -o out'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias matlab='/Applications/MATLAB_R2019b.app/bin/matlab'
+alias eclipse='open -a /Users/aprotyas/eclipse/java-2020-12/Eclipse.app/Contents/MacOS/eclipse'
 alias ltx='cp ~/template.tex .'
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
+#export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+#export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
+
+#alias python3="/usr/local/bin/python3.8"
+export PATH="/usr/local/opt/qt/bin:$PATH"
+source /usr/local/share/colcon_cd/function/colcon_cd.sh
+export _colcon_cd_root=~/ros2_install

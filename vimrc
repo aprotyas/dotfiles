@@ -5,6 +5,8 @@
  set nocompatible   " be iMproved, required for Vundle
  filetype off       " required for Vundle
 
+ set path+=**
+
  " VUNDLE plugin stuff
  " set the runtime path to include Vundle and initialize
  set rtp+=~/.vim/bundle/Vundle.vim
