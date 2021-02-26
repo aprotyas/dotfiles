@@ -157,3 +157,6 @@ export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+#source /usr/share/colcon_cd/function/colcon_cd.sh
+#export _colcon_cd_root=~/ros2_install
+#export ROS_NAMESPACE=${USER}

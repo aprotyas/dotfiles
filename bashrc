@@ -133,7 +133,7 @@ export PATH="$HOME/gems/bin:$PATH"
 #source /opt/ros/melodic/setup.bash
 #source /opt/ros/noetic/setup.bash
 #source ~/ros2_foxy/install/local_setup.bash
-export ROS_NAMESPACE=${USER}
+#export ROS_NAMESPACE=${USER}
 #export ROS_NAMESPACE=${USER}
 
 # Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
