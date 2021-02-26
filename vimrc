@@ -5,6 +5,8 @@
  set nocompatible   " be iMproved, required for Vundle
  filetype off       " required for Vundle
 
+ set path+=**
+
  " VUNDLE plugin stuff
  " set the runtime path to include Vundle and initialize
  set rtp+=~/.vim/bundle/Vundle.vim
@@ -17,7 +19,6 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
- Plugin 'Valloric/YouCompleteMe'
  Plugin 'Yggdroot/indentLine'
  Plugin 'octol/vim-cpp-enhanced-highlight'
  Plugin 'arzg/vim-rust-syntax-ext'
