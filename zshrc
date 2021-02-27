@@ -156,10 +156,8 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 
 #export PYTHONPATH="/Users/aprotyas/Documents/Work/University of Rochester - Undergrad/Year 4/fall_2020/ece447:$PYTHONPATH"
 
-export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
-
-#export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 #export GPG_TTY=$(tty)
 #gpgconf --launch gpg-agent
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
+#export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
