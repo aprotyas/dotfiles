@@ -158,11 +158,8 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 
+#export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
 #export GPG_TTY=$(tty)
 #gpgconf --launch gpg-agent
-#source /usr/share/colcon_cd/function/colcon_cd.sh
-#export _colcon_cd_root=~/ros2_install
-#export ROS_NAMESPACE=${USER}
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
-export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
