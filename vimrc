@@ -19,7 +19,6 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'morhetz/gruvbox'
  Plugin 'rust-lang/rust.vim'
- Plugin 'Valloric/YouCompleteMe'
  Plugin 'Yggdroot/indentLine'
  Plugin 'octol/vim-cpp-enhanced-highlight'
  Plugin 'arzg/vim-rust-syntax-ext'
