@@ -11,19 +11,12 @@
  " set the runtime path to include Vundle and initialize
  set rtp+=~/.vim/bundle/Vundle.vim
  call vundle#begin()
- Plugin 'pboettch/vim-cmake-syntax'
  Plugin 'vim-airline/vim-airline'
  Plugin 'vim-airline/vim-airline-themes'
- Plugin 'VundleVim/Vundle.vim'
  Plugin 'preservim/nerdtree'
  Plugin 'Xuyuanp/nerdtree-git-plugin'
- Plugin 'morhetz/gruvbox'
- Plugin 'rust-lang/rust.vim'
- Plugin 'Yggdroot/indentLine'
- Plugin 'octol/vim-cpp-enhanced-highlight'
- Plugin 'arzg/vim-rust-syntax-ext'
- Plugin 'arzg/vim-colors-xcode'
- Plugin 'tpope/vim-git'
+ Plugin 'sheerun/vim-polyglot'
+ Plugin 'lifepillar/vim-gruvbox8'
  call vundle#end()
  filetype plugin indent on
 
@@ -31,9 +24,11 @@
  set laststatus=2
  if (has("termguicolors"))
   set termguicolors
-endif
- colorscheme xcodedark
- let g:airline_theme='xcodedark'
+ endif
+
+ " dark colorscheme
+ set background=dark
+ colorscheme gruvbox8_soft
 
  " tabs are four spaces, smart tabbing
  set tabstop=4
