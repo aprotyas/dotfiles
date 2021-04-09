@@ -31,7 +31,7 @@
  set laststatus=2
  if (has("termguicolors"))
   set termguicolors
-endif
+ endif
  colorscheme xcodedark
  let g:airline_theme='xcodedark'
 
@@ -132,10 +132,6 @@ endif
  " NERDTree will automatically open when vim starts up on a directory
  autocmd StdinReadPre * let s:std_in=1
  autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
- 
- " Mappings for compiling LaTeX files
- autocmd FileType tex nmap <buffer> <leader>t :!pdflatex %<CR>
- autocmd FileType tex nmap <buffer> T :!open -a Skim %:r.pdf<CR><CR>
 
  " airline customization
  " smarter tab line
@@ -144,9 +140,5 @@ endif
  " just show the filename
  let g:airline#extensions#tabline#fnamemod = ':t'
 
- " let g:indentLine_leadingSpaceEnabled = 1
- " let g:indentLine_leadingSpaceChar = '·'
- " let g:indentLine_char = ''
-
- " rustfmt formats .rs on autosave
- let g:rustfmt_autosave = 1
+ " rust recommended style gives me huge tabs lol
+ let g:rust_recommended_style = 0
