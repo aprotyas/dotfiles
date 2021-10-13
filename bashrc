@@ -145,4 +145,3 @@ export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
-source "$HOME/.cargo/env"

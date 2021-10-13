@@ -6,7 +6,6 @@
  filetype off       " required for Vundle
 
  set path+=**
-
  " VUNDLE plugin stuff
  " set the runtime path to include Vundle and initialize
  set rtp+=~/.vim/bundle/Vundle.vim
@@ -16,7 +15,7 @@
  Plugin 'preservim/nerdtree'
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'sheerun/vim-polyglot'
- Plugin 'lifepillar/vim-gruvbox8'
+ Plugin 'NLKNguyen/papercolor-theme'
  call vundle#end()
  filetype plugin indent on
 
@@ -26,9 +25,36 @@
   set termguicolors
  endif
 
- " dark colorscheme
- set background=dark
- colorscheme gruvbox8_soft
+ " dark colorscheme based on system theme
+ let systheme = system('defaults read -g AppleInterfaceStyle')
+ if systheme =~ 'Dark'
+     set background=dark
+ else
+     set background=light
+ endif
+
+ colorscheme PaperColor
+ let g:airline_theme='papercolor'
+ let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'transparent_background': 1,
+  \       'allow_bold': 1,
+  \       'allow_italic': 1
+  \     }
+  \   },
+  \   'language': {
+  \     'python': {
+  \       'highlight_builtins' : 1
+  \     },
+  \     'cpp': {
+  \       'highlight_standard_library': 1
+  \     },
+  \     'c': {
+  \       'highlight_builtins' : 1
+  \     }
+  \   }
+  \ }
 
  " tabs are four spaces, smart tabbing
  set tabstop=4
@@ -40,8 +66,8 @@
  set autoindent
  set smartindent
 
- " column 80 v-line
- set colorcolumn=80
+ " column 100 v-line
+ set colorcolumn=100
  " highlight colorcolumn guibg=darkgreen
  " highlight colorcolumn ctermbg=2
 
@@ -145,3 +171,11 @@
 
  " rustfmt formats .rs on autosave
  let g:rustfmt_autosave = 1
+
+ " highlighting trailing whitespace
+ highlight ExtraWhitespace ctermbg=red guibg=red
+ match ExtraWhitespace /\s\+$/
+ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+ autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+ autocmd BufWinLeave * call clearmatches()
