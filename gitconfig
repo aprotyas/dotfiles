@@ -6,6 +6,38 @@
 [core]
 	editor = vim
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only --features=interactive
+[delta]
+	features = decorations unobstrusive-line-numbers
+	navigate = true
+	line-numbers = true
+	whitespace-error-style = 22 reverse
+[delta "unobtrusive-line-numbers"]
+	line-numbers = true
+	line-numbers-minus-style = "#444444"
+	line-numbers-zero-style = "#444444"
+	line-numbers-plus-style = "#444444"
+	line-numbers-left-format = "{nm:>4}┊"
+	line-numbers-right-format = "{np:>4}│"
+	line-numbers-left-style = blue
+	line-numbers-right-style = blue
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	commit-style = raw
+	file-style = bold yellow ul
+	file-decoration-style = none
+	hunk-header-decoration-style = yellow box
+	hunk-header-file-style = red
+	hunk-header-line-number-style = "#067a00"
+	hunk-header-style = file line-number syntax
+[delta "interactive"]
+	keep-plus-minus-markers = false
+[merge]
+	conflictstyle = diff3
+[diff]
+	colorMoved = default
 [commit]
 	gpgsign = true
 [help]
@@ -36,3 +68,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
