@@ -16,6 +16,8 @@
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'sheerun/vim-polyglot'
  Plugin 'NLKNguyen/papercolor-theme'
+ Plugin 'tpope/vim-fugitive'
+ Plugin 'Yggdroot/indentLine'
  call vundle#end()
  filetype plugin indent on
 
@@ -27,12 +29,7 @@
  let g:airline_theme='xcodedark'
 
  " dark colorscheme based on system theme
- let systheme = system('defaults read -g AppleInterfaceStyle')
- if systheme =~ 'Dark'
-     set background=dark
- else
-     set background=light
- endif
+ set background=dark
 
  colorscheme PaperColor
  let g:airline_theme='papercolor'
@@ -58,8 +55,9 @@
   \ }
 
  " tabs are four spaces, smart tabbing
- set tabstop=4
- set shiftwidth=4
+ set tabstop=2
+ set softtabstop=2
+ set shiftwidth=2
  set expandtab
  set smarttab
 
