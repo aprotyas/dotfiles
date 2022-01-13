@@ -124,24 +124,29 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
 
-# ROS Stuff
-#source /opt/ros/kinetic/setup.bash
-#source /opt/ros/melodic/setup.bash
-#source /opt/ros/noetic/setup.bash
-#source ~/ros2_foxy/install/local_setup.bash
-#export ROS_NAMESPACE=${USER}
-#export ROS_NAMESPACE=${USER}
-
-# Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
-export PS1="[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W]\\$ "
-
-# ECE232 specific
-#source /home/aprotyas/work/coursework/spring-2020/amr-2020/devel/setup.bash
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
 export OPENSSL_ROOT_DIR=/usr/local/opt/openssl@1.1
+export EDITOR=vim
+
+export PATH=$PATH:~/.local/bin
+
+source /etc/bash_completion.d/git-prompt
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWSTASHSTATE=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUPSTREAM='auto'
+# Custom bash prompt: refer to https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html
+PS1='[\A \[\e[32m\]\u\[\e[m\]@\[\e[34m\]\h\[\e[m\]: \W] $(__git_ps1 "(%s)")\\$ '
+
+source "$HOME/.cargo/env"
+
+# Replace manual pager with `bat`
+export MANPAGER="sh -c 'col -bx | batcat -l man -p'"
+alias bat='batcat'
+alias ls='exa --git'
+alias tree='exa --tree --git --long'
