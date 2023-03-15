@@ -36,13 +36,23 @@ rgbat() {
 }
 
 # Git prompt customization
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
+autoload -Uz add-zsh-hook vcs_info
+# Enable substitution in the prompt.
 setopt prompt_subst
-RPROMPT='${vcs_info_msg_0_}'
-# PROMPT='${vcs_info_msg_0_}%# '
-zstyle ':vcs_info:git:*' formats '%b'
+# Run vcs_info just before a prompt is displayed (precmd)
+add-zsh-hook precmd vcs_info
+# add ${vcs_info_msg_0} to the prompt
+# e.g. here we add the Git information in red
+PROMPT='[%T] %n@%m %1~ %F{red}${vcs_info_msg_0_}%f %# '
+
+# Enable checking for (un)staged changes, enabling use of %u and %c
+zstyle ':vcs_info:*' check-for-changes true
+# Set custom strings for an unstaged vcs repo changes (*) and staged changes (+)
+zstyle ':vcs_info:*' unstagedstr ' *'
+zstyle ':vcs_info:*' stagedstr ' +'
+# Set the format of the Git information for vcs_info
+zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
+zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 export GPG_TTY=$(tty)
 
