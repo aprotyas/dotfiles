@@ -45,3 +45,5 @@ RPROMPT='${vcs_info_msg_0_}'
 zstyle ':vcs_info:git:*' formats '%b'
 
 export GPG_TTY=$(tty)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
