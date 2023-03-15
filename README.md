@@ -1,5 +1,5 @@
 # dotfiles
-Personal system config files (vim, bash/zsh, etc.) :smiley:
+Personal system config files (vim, zsh, etc.) :smiley:
 
 ## Instructions  
 *  `git clone https://github.com/aprotyas/dotfiles.git $HOME/dotfiles`  
@@ -30,17 +30,3 @@ following shell command to Dotbot's YAML config file:
     }
 ]
 ```
-
-## Tidbits & Flotsam  
-*  [Markdown cheatsheet](
-        https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-        "Markdown cheatsheet")  
-*  [Vim: map vs noremap?](
-        https://learnvimscriptthehardway.stevelosh.com/chapters/05.html
-        "map vs noremap")  
-*  [Shell prompts!](http://www.nparikh.org/unix/prompt.php#zsh "Customizing
-        shell prompts")
-*  [Vim cheatsheet](
-        https://vim.rtorr.com/
-        "Vim cheatsheet")  
-

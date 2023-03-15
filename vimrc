@@ -18,41 +18,17 @@
  Plugin 'NLKNguyen/papercolor-theme'
  Plugin 'tpope/vim-fugitive'
  Plugin 'Yggdroot/indentLine'
+ Plugin 'catppuccin/vim'
  call vundle#end()
  filetype plugin indent on
 
  " Always display status bar
  set laststatus=2
- if (has("termguicolors"))
-  set termguicolors
- endif
- let g:airline_theme='xcodedark'
+ set termguicolors
 
- " dark colorscheme based on system theme
- set background=dark
-
- colorscheme PaperColor
- let g:airline_theme='papercolor'
- let g:PaperColor_Theme_Options = {
-  \   'theme': {
-  \     'default': {
-  \       'transparent_background': 1,
-  \       'allow_bold': 1,
-  \       'allow_italic': 1
-  \     }
-  \   },
-  \   'language': {
-  \     'python': {
-  \       'highlight_builtins' : 1
-  \     },
-  \     'cpp': {
-  \       'highlight_standard_library': 1
-  \     },
-  \     'c': {
-  \       'highlight_builtins' : 1
-  \     }
-  \   }
-  \ }
+ set background=light
+ colorscheme catppuccin_latte
+ let g:airline_theme='catppuccin_latte'
 
  " tabs are four spaces, smart tabbing
  set tabstop=2

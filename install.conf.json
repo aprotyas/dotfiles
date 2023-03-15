@@ -11,10 +11,12 @@
     },
     {
         "link": {
-            "~/.bashrc":"bashrc",
+            "~/.zshrc":"zshrc",
             "~/.gitconfig":"gitconfig",
             "~/.vimrc": "vimrc",
 	          "~/.vim": "vim/",
+	          "~/.config/bat": "config/bat/",
+            "~/Library/Developer/Xcode/UserData/FontAndColorThemes": "xcode/",
             "~/.dotfiles": ""
         }
     },
