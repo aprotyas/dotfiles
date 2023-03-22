@@ -15,7 +15,6 @@
  Plugin 'preservim/nerdtree'
  Plugin 'Xuyuanp/nerdtree-git-plugin'
  Plugin 'sheerun/vim-polyglot'
- Plugin 'NLKNguyen/papercolor-theme'
  Plugin 'tpope/vim-fugitive'
  Plugin 'Yggdroot/indentLine'
  Plugin 'catppuccin/vim'
@@ -26,9 +25,9 @@
  set laststatus=2
  set termguicolors
 
- set background=light
- colorscheme catppuccin_latte
- let g:airline_theme='catppuccin_latte'
+ set background=dark
+ colorscheme catppuccin_macchiato
+ let g:airline_theme='catppuccin_macchiato'
 
  " tabs are four spaces, smart tabbing
  set tabstop=2

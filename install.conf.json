@@ -17,6 +17,7 @@
 	          "~/.vim": "vim/",
 	          "~/.config/bat": "config/bat/",
             "~/Library/Developer/Xcode/UserData/FontAndColorThemes": "xcode/",
+            "~/Library/Application\\ Support/Sublime\\ Text/Packages/catpuccin": "sublime_text/",
             "~/.dotfiles": ""
         }
     },
