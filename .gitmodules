@@ -7,3 +7,6 @@
 	path = vim/bundle/Vundle.vim
 	url = git@github.com:VundleVim/Vundle.vim.git
     ignore = dirty
+[submodule "bat-extras"]
+	path = bat-extras
+	url = git@github.com:eth-p/bat-extras.git
