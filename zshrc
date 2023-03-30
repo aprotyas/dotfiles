@@ -62,3 +62,18 @@ export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
 --color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
 --color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+
+perp() {
+	perp_bin_path="/Users/aprotyas/dev/tools/perp/bin/perp"
+	echo "PERP_BIN_PATH: $perp_bin_path"
+
+	if [[ -v PERP_BUILD_PATH ]]; then
+		perp_build_path=$PERP_BUILD_PATH
+	else
+		perp_build_path="/Users/aprotyas/Build/Products"
+	fi
+	echo "PERP_BUILD_PATH: $perp_build_path"
+	PERP_BUILD_PATH=$perp_build_path $perp_bin_path "$@"
+}
+
+alias code="open -a XCode2"
