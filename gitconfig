@@ -22,6 +22,14 @@
 	autoCorrect = 1
 [github]
 	user = aprotyas
+[alias]
+	contains = "!f() { \
+		if git merge-base --is-ancestor $1 HEAD; then \
+			echo I contain commit $1; \
+		else \
+			echo I do not contain commit $1; \
+		fi \
+		}; f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
