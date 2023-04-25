@@ -35,6 +35,9 @@ rgbat() {
 	rg --pretty "$@" | bat
 }
 
+path+=('/Users/aprotyas/.bat/extras/src')
+
+
 # Git prompt customization
 autoload -Uz add-zsh-hook vcs_info
 # Enable substitution in the prompt.
@@ -77,3 +80,7 @@ perp() {
 }
 
 alias code="open -a XCode2"
+
+path+=('/Applications/Sublime Text.app/Contents/SharedSupport/bin')
+
+alias codename='smcif -k RPlt | xxd -r -p && echo'
