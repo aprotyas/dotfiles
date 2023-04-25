@@ -1,3 +1,9 @@
+# "Infinite" history
+setopt hist_ignore_dups
+setopt share_history
+export HISTSIZE=100000
+export SAVEHIST=100000
+
 # Homebrew completions
 # Note: has to come before we call `compinit`
 [[ -d /opt/homebrew/share/zsh/site-functions ]] && fpath+=(/opt/homebrew/share/zsh/site-functions)
