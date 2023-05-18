@@ -18,6 +18,7 @@
  Plugin 'tpope/vim-fugitive'
  Plugin 'Yggdroot/indentLine'
  Plugin 'catppuccin/vim'
+ Plugin 'arzg/vim-colors-xcode'
  call vundle#end()
  filetype plugin indent on
 
@@ -25,9 +26,9 @@
  set laststatus=2
  set termguicolors
 
- set background=dark
- colorscheme catppuccin_macchiato
- let g:airline_theme='catppuccin_macchiato'
+ set background=light
+ colorscheme xcodelight
+ let g:airline_theme='xcodelight'
 
  " tabs are four spaces, smart tabbing
  set tabstop=2

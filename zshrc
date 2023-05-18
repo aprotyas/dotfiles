@@ -66,11 +66,7 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-export FZF_DEFAULT_OPTS=" \
---color=bg+:#363a4f,bg:#24273a,spinner:#f4dbd6,hl:#ed8796 \
---color=fg:#cad3f5,header:#ed8796,info:#c6a0f6,pointer:#f4dbd6 \
---color=marker:#f4dbd6,fg+:#cad3f5,prompt:#c6a0f6,hl+:#ed8796"
+source ~/.dotfiles/fzf/base16-tomorrow.config
 
 perp() {
 	perp_bin_path="/Users/aprotyas/dev/tools/perp/bin/perp"
@@ -90,3 +86,4 @@ alias code="open -a XCode2"
 path+=('/Applications/Sublime Text.app/Contents/SharedSupport/bin')
 
 alias codename='smcif -k RPlt | xxd -r -p && echo'
+alias batteryPercentage='pmset -g batt | grep -Eo "\d+%" | cut -d% -f1'
