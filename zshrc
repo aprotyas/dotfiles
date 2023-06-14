@@ -87,3 +87,5 @@ path+=('/Applications/Sublime Text.app/Contents/SharedSupport/bin')
 
 alias codename='smcif -k RPlt | xxd -r -p && echo'
 alias batteryPercentage='pmset -g batt | grep -Eo "\d+%" | cut -d% -f1'
+
+open -a "System Info Menu"
