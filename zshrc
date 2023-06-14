@@ -43,6 +43,7 @@ rgbat() {
 
 path+=('/Users/aprotyas/.bat/extras/src')
 
+path+=('/Users/aprotyas/.iterm/extras/')
 
 # Git prompt customization
 autoload -Uz add-zsh-hook vcs_info
@@ -89,3 +90,5 @@ alias codename='smcif -k RPlt | xxd -r -p && echo'
 alias batteryPercentage='pmset -g batt | grep -Eo "\d+%" | cut -d% -f1'
 
 open -a "System Info Menu"
+
+eval "$(direnv hook zsh)"
