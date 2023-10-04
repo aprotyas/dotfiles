@@ -30,6 +30,9 @@
 			echo I do not contain commit $1; \
 		fi \
 		}; f"
+	stash-apply-reverse = "!f() { \
+		git stash show -p | git apply --reverse; \
+		}; f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
