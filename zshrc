@@ -76,7 +76,7 @@ perp() {
 	if [[ -v PERP_BUILD_PATH ]]; then
 		perp_build_path=$PERP_BUILD_PATH
 	else
-		perp_build_path="/Users/aprotyas/Build/Products"
+		perp_build_path="/Users/aprotyas/Build/"
 	fi
 	echo "PERP_BUILD_PATH: $perp_build_path"
 	PERP_BUILD_PATH=$perp_build_path $perp_bin_path "$@"
@@ -92,3 +92,15 @@ alias batteryPercentage='pmset -g batt | grep -Eo "\d+%" | cut -d% -f1'
 open -a "System Info Menu"
 
 eval "$(direnv hook zsh)"
+
+path+=('/Users/aprotyas/bin')
+
+bugzilla() {
+	open "https://bugs.webkit.org/show_bug.cgi?id=$@"
+}
+
+if [ -f ~/.zsh/apple-internal-alias ]; then
+	source ~/.zsh/apple-internal-alias
+else
+	print "404: ~/.zsh/apple-internal-alias not found."
+fi
