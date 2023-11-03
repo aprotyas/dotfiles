@@ -33,6 +33,9 @@
 	stash-apply-reverse = "!f() { \
 		git stash show -p | git apply --reverse; \
 		}; f"
+	remove-untracked-files = "!f() { \
+		git clean -fd $1; \
+		}; f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
