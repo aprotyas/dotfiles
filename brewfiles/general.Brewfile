@@ -6,7 +6,6 @@ brew "direnv"
 brew "exa"
 brew "fzf"  # For key bindings/fuzzy completion: $(brew --prefix)/opt/fzf/install
 brew "gh"
-brew "gnupg"
 brew "htop"
 brew "pinentry-mac"
 brew "ripgrep"
