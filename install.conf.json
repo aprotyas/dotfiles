@@ -13,6 +13,7 @@
         "link": {
             "~/.zshrc":"zshrc",
             "~/.gitconfig":"gitconfig",
+            "~/.gitconfigQuirks":"gitconfigQuirks/",
             "~/.vimrc": "vimrc",
 	          "~/.vim": "vim/",
 	          "~/.config/bat": "config/bat/",

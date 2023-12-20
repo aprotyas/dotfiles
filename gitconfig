@@ -14,10 +14,6 @@
 	keep-plus-minus-markers = false
 [merge]
 	conflictstyle = diff3
-[gpg]
-	program = /opt/homebrew/bin/gpg
-[commit]
-	gpgsign = true
 [help]
 	autoCorrect = 1
 [github]
@@ -43,3 +39,11 @@
 	required = true
 [credential "https://github.com"]
 	helper = !/usr/local/bin/gh auth git-credential
+[gpg "x509"]
+	program = /usr/local/bin/ac-sign
+[gpg]
+	format = x509
+[commit]
+	gpgsign = true
+[includeIf "hasconfig:remote.*.url:https://github.com/WebKit/WebKit.git"]
+	path = .gitconfigQuirks/WebKit.gitconfig
