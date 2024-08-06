@@ -32,6 +32,9 @@
 	remove-untracked-files = "!f() { \
 		git clean -fd $1; \
 		}; f"
+	rebase-on-main = "!f() { \
+		git fetch --all --prune && git pull --rebase origin main; \
+		}; f"
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
