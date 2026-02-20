@@ -19,6 +19,7 @@
  Plugin 'Yggdroot/indentLine'
  Plugin 'catppuccin/vim'
  Plugin 'arzg/vim-colors-xcode'
+ Plugin 'morhetz/gruvbox'
  call vundle#end()
  filetype plugin indent on
 
@@ -27,8 +28,8 @@
  set termguicolors
 
  set background=light
- colorscheme xcodelight
- let g:airline_theme='xcodelight'
+ autocmd vimenter * ++nested colorscheme gruvbox
+ let g:airline_theme='gruvbox'
 
  " tabs are four spaces, smart tabbing
  set tabstop=2

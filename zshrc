@@ -104,3 +104,5 @@ if [ -f ~/.zsh/apple-internal-alias ]; then
 else
 	print "404: ~/.zsh/apple-internal-alias not found."
 fi
+
+export EDITOR=vim
