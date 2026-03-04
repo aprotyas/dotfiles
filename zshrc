@@ -23,9 +23,9 @@ source /Users/aprotyas/dev/tools/perp/extras/perp.completions
 alias ll='ls -alF'
 alias la='ls -A'
 
-# Exa
-alias ls='exa --git'
-alias tree='exa --tree --git --long'
+# Eza
+alias ls='eza --git'
+alias tree='eza --tree --git --long'
 
 # Bat
 alias bathelp='bat --plain --language=help'
@@ -67,19 +67,22 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 export GPG_TTY=$(tty)
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 source ~/.dotfiles/fzf/base16-tomorrow.config
 
 perp() {
 	perp_bin_path="/Users/aprotyas/dev/tools/perp/bin/perp"
+	perp_dropbox_path="/Users/aprotyas/dev/perpDropbox"
 	echo "PERP_BIN_PATH: $perp_bin_path"
-
-	if [[ -v PERP_BUILD_PATH ]]; then
+	echo "PERP_DROPBOX_PATH: $perp_dropbox_path"
+	if [[ -v PERP_BUILD_PATH ]]
+	then
 		perp_build_path=$PERP_BUILD_PATH
 	else
 		perp_build_path="/Users/aprotyas/Build/"
 	fi
 	echo "PERP_BUILD_PATH: $perp_build_path"
-	PERP_BUILD_PATH=$perp_build_path $perp_bin_path "$@"
+	PERP_BUILD_PATH=$perp_build_path PERP_DROPBOX_PATH=$perp_dropbox_path $perp_bin_path "$@"
 }
 
 alias code="open -a XCode2"
@@ -106,3 +109,5 @@ else
 fi
 
 export EDITOR=vim
+
+eval "$(/Users/aprotyas/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
