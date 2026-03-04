@@ -19,7 +19,8 @@
 	          "~/.config/bat": "config/bat/",
             "~/.bat/extras": "bat-extras/",
             "~/Library/Developer/Xcode/UserData/FontAndColorThemes": "xcode/",
-            "~/Library/Application\\ Support/Sublime\\ Text/Packages/catpuccin": "sublime_text/",
+            "~/Library/Application\\ Support/Sublime\\ Text/Packages/User": "sublime_text/Packages/User",
+            "~/Library/Application\\ Support/Sublime\\ Text/Installed\\ Packages": "sublime_text/installed_packages",
             "~/.dotfiles": ""
         }
     },

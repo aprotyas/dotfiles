@@ -66,9 +66,9 @@ zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
 
 export GPG_TTY=$(tty)
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
-source ~/.dotfiles/fzf/base16-tomorrow.config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ~/.dotfiles/fzf/gruvbox.config
 
 perp() {
 	perp_bin_path="/Users/aprotyas/dev/tools/perp/bin/perp"
@@ -111,3 +111,8 @@ fi
 export EDITOR=vim
 
 eval "$(/Users/aprotyas/.local/bin/mise activate zsh)" # added by https://mise.run/zsh
+
+mandump() {
+	man "$@" 2>/dev/null | col -b
+}
+
